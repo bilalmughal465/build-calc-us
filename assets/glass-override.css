@@ -1,0 +1,79 @@
+/* BuildCalc glass full-site override — locked colors (Bilal approved 2026-11-01).
+   Loaded LAST on every page so it wins over V49 light-theme rules. */
+/* BASE: dark navy page, light definition text, Sora */
+html,body{background:#0B2447!important;background-image:none!important}
+body{color:#E6EEF8!important;font-family:'Sora',sans-serif!important}
+header{background:#071A33!important;border-bottom:1px solid rgba(232,180,74,.35)!important}
+footer{background:#071A33!important;border-top:1px solid rgba(232,180,74,.25)!important;color:#E6EEF8!important}
+footer b,footer strong{color:#ffffff!important}
+/* HEADINGS: solid white everywhere, no gradients (incl .gt + .mix spans inside headings) */
+h1,h2,h3,h4,.gt,
+h1 .mix,h2 .mix,h3 .mix,h4 .mix,
+h1 .mix b,h2 .mix b,h3 .mix b,h4 .mix b,
+.tool h1,.tool h2,.tool h3,.card h1,.card h2,.card h3,
+#res h1,#res h2,#res h3,#res .gt{background:none!important;background-image:none!important;-webkit-background-clip:initial!important;background-clip:initial!important;-webkit-text-fill-color:#ffffff!important;color:#ffffff!important;font-weight:800!important}
+/* CARDS: dark navy glass */
+.tool,.card,.calc-box,.cat-box,.calc-card{background:#0B2447!important;background-image:none!important;border:1px solid rgba(232,180,74,.35)!important;border-radius:18px!important;box-shadow:0 10px 34px rgba(0,0,0,.35)!important;color:#E6EEF8!important}
+.feat-grid>div{background:#0B2447!important;border:1px solid rgba(232,180,74,.25)!important;border-radius:14px!important}
+.feat-grid b{color:#ffffff!important}
+/* LABELS: white bold */
+label,.f label,.tool label,.gl,.tool .gl,.fields .f label{color:#ffffff!important;font-weight:800!important}
+/* UNITS inside labels: white (result units are gold via the later, more specific rules) */
+.tool label .u,.fields .f .u,label .u{color:#ffffff!important;font-weight:800!important}
+/* INPUTS: white field, dark text */
+input,select,textarea{background:#ffffff!important;color:#1F2A3A!important;border:1px solid #7A8CA3!important}
+input::placeholder{color:#55657A!important}
+/* UNIT TOGGLES */
+.seg button{background:rgba(255,255,255,.12)!important;color:#ffffff!important;border:1px solid rgba(255,255,255,.25)!important}
+.seg button[aria-pressed="true"],.seg button.active,.seg button.on,.seg button[aria-selected="true"]{background:#E8B44A!important;color:#0B2447!important;border-color:#E8B44A!important;font-weight:800!important}
+/* ACTION BUTTONS: translucent + gold border (Copy/Print/Download/Share) */
+.acts button{background:rgba(255,255,255,.12)!important;color:#ffffff!important;border:1px solid rgba(232,180,74,.45)!important;font-weight:700!important}
+.acts button:hover{background:#E8B44A!important;color:#0B2447!important}
+/* OLD-STYLE + TOOL primary buttons: gold (Calculate) */
+main .card button,.calc-box button{background:#E8B44A!important;color:#0B2447!important;border:1px solid #B8841F!important;font-weight:800!important}
+/* LINKS: gold; header links white; designed white CTA preserved */
+a{color:#E8B44A!important}
+header a{color:#ffffff!important}
+a.cta-btn,.cta-btn{background:#ffffff!important;color:#071A33!important}
+/* TEXT / DEFINITIONS: light gray-white */
+main p,section p,article p,p.intro,p.meta,details p,section li,article li,details li,.mut,.tool .mut,.meta,.bc,.crumb,.info,.disp-head{color:#E6EEF8!important}
+p b,p strong,li b,li strong{color:#ffffff!important}
+.bc a,.crumb a{color:#E8B44A!important}
+/* CATEGORY + CARD accents */
+.cat,.cat-icon,.card-num,.cat-box-count{color:#E8B44A!important;font-weight:800!important}
+.cat-box-desc,.calc-card span{color:#E6EEF8!important}
+.calc-card b,.cat-box b{color:#ffffff!important}
+/* RESULTS: containers navy, VALUES gold, row labels light */
+#res,.res{background:#0B2447!important;background-image:none!important;border:1px solid rgba(232,180,74,.45)!important;border-radius:16px!important}
+#res .big .num,.res .big .num,.big .num{color:#E8B44A!important;font-weight:800!important}
+#res .big .u,#res .big .lb,.res .big .u,.res .big .lb{color:#E8B44A!important;font-weight:700!important}
+#res .row b,.res .row b{color:#E8B44A!important;font-weight:800!important}
+#res .row span,.res .row span{color:#E6EEF8!important}
+.result,#out{color:#E8B44A!important;font-weight:800!important}
+#out{background:#0B2447!important;background-image:none!important;border:1px solid rgba(232,180,74,.45)!important;border-radius:12px!important}
+.empty{color:#E6EEF8!important}
+/* TABLES */
+table,.tw table{color:#E6EEF8!important}
+th,.tw th{color:#E8B44A!important}
+td{border-top:1px solid rgba(255,255,255,.14)!important}
+/* DETAILS / FAQ */
+details{color:#E6EEF8!important}
+details summary,summary{color:#ffffff!important;font-weight:700!important}
+/* DIAGRAM: keep light (SVG fills are unaffected by text color) */
+.dg{background:rgba(255,255,255,.92)!important;border-radius:14px!important;padding:10px!important}
+/* MISC */
+.k-num{color:#E8B44A!important;font-weight:800!important}
+.k-fn{color:#E6EEF8!important}
+hr{border-color:rgba(255,255,255,.20)!important}
+:focus-visible{outline:2px solid #E8B44A!important;outline-offset:2px}
+.hero{background:#0B2447!important;background-image:none!important}
+/* SCIENTIFIC CALCULATOR keys: preserve designed scheme (equals = ONLY gold key) */
+.panel{background:#0B2447!important;border:1px solid rgba(232,180,74,.25)!important;border-radius:16px!important}
+.display{background:#071A33!important;border:1px solid rgba(232,180,74,.35)!important}
+.display .expr{color:#E6EEF8!important}
+.display .out,.display .result{color:#E8B44A!important;font-weight:800!important}
+.k-num{background:#ffffff!important;color:#0B2447!important}
+.k-fn{background:#E4EDF8!important;color:#0B2447!important}
+.k-op{background:#2E5E8C!important;color:#ffffff!important}
+.k-eq{background:#E8B44A!important;color:#0B2447!important;border-color:#B8841F!important}
+.deg-btn{background:#2E5E8C!important;color:#ffffff!important}
