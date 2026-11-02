@@ -77,3 +77,6 @@ hr{border-color:rgba(255,255,255,.20)!important}
 .k-op{background:#2E5E8C!important;color:#ffffff!important}
 .k-eq{background:#E8B44A!important;color:#0B2447!important;border-color:#B8841F!important}
 .deg-btn{background:#2E5E8C!important;color:#ffffff!important}
+
+/* FIX 2026-11-02 (Bilal): even table rows are near-white (#F3F7FC) but table text is light, so row text was invisible. Dark text on even rows only; header (dark bg, white text) and odd rows (dark bg, light text) untouched. */
+tr:nth-child(even)  td{color:#1F2A3A!important}
